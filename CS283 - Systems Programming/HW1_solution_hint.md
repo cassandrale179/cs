@@ -12,17 +12,17 @@
    
 - **Q2**: This is a well documented code on Stack Overflow to create an array arr that stores binary value of decimal x  
 
-```c
-void get_bin(int *arr, int x)
-{
-    
-    // x & 1 is equivalent to x % 2 
-    // x >> 1 is equivalent to x / 2 
-    int i;
-    for (i = sizeof x * CHAR_BIT - 1; i >= 0; --i)
-        *arr++ = x >> i & 1;
-}
-``` 
+  ```c
+  void get_bin(int *arr, int x)
+  {
+
+      // x & 1 is equivalent to x % 2 
+      // x >> 1 is equivalent to x / 2 
+      int i;
+      for (i = sizeof x * CHAR_BIT - 1; i >= 0; --i)
+          *arr++ = x >> i & 1;
+  }
+  ``` 
 
 
 - **Q3**: for this problem, have two pointers (start and end)
